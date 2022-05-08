@@ -18,20 +18,76 @@ body{
     background-color: aqua;
 }
 #header > .top-header{
+    padding: 10px 25px;
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr 2fr;
+    grid-template-columns: 5fr 3fr;
+    /* align-items: center; */
 }
+#notifications{
+    display: flex;
+    align-items: center;
+}
+#notifications div{
+    flex:1;
+}
+#notifications div:first-child{
+    text-align: end;
+}
+#notifications div:first-child + div{
+    text-align: center;
+}
+#notifications #profile-name{
+    flex: 2;
+}
+input[type="search"]{
+    width: 75%;
+    height: 25px;
+    border-radius: 10px;
+    border: 0;
+    background-color: gainsboro;
+}
+#profile-pic img{
+    width: 50%;
+    border-radius: 50%;
+}
+#search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
 #header > .bottom-header{
+    padding: 10px 25px;
     display: grid;
     grid-template-columns: 1fr 4fr 3fr;
+    align-items: center;
+}
+.bottom-header .pic img{
+    width: 75%;
+    border-radius: 50%;
+}
+.greeting p{
+    margin: 5px 0;
+}
+ul{
+    list-style: none;
 }
 .topics ul{
     display: flex;
     justify-content: space-between;
+    
+}
+.topics ul li{
+    background-color: rgb(21, 157, 203);
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin: 0 15px;
 }
 #main{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 15px;
 }
 #main > .trending{
     grid-area: 2/2/3/3;
@@ -39,4 +95,8 @@ body{
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 15px;
+}
+.card{
+    border: 1px solid black;
 }
