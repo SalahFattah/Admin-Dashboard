@@ -29,3 +29,14 @@ body{
     display: flex;
     justify-content: space-between;
 }
+#main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#main > .trending{
+    grid-area: 2/2/3/3;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
