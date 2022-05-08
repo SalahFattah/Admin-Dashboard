@@ -88,6 +88,7 @@ ul{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
+    background-color: gainsboro;
 }
 #main > .trending{
     grid-area: 2/2/3/3;
@@ -95,8 +96,33 @@ ul{
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap: 15px;
+    /* gap: 15px; */
 }
 .card{
-    border: 1px solid black;
+    border-left: 8px solid orange;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 20px 15px 10px;
+    font-size: 0.8rem;
+}
+.card h4{
+    margin: 0;
+}
+.card p{
+    margin: 5px 0 10px 0;
+    padding-right: 30px;
+}
+[title="Share"] svg{
+    transform: rotate(270deg);
+}
+.card-icons{
+    text-align: end;
+}
+.card-icons span{
+    margin: 5px;
+}
+.card-icons svg{
+    width: 1rem !important;
 }
